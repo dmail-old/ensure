@@ -1,0 +1,16 @@
+{
+  "name": "@dmail/ensure",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "3.16.1",
+    "eslint-plugin-import": "2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmail/ensure"
+  }
+}
