@@ -1,6 +1,6 @@
 # Ensure
 [![npm](https://badge.fury.io/js/%40dmail%2Fensure.svg)](https://badge.fury.io/js/%40dmail%2Fensure)
-[![build](https://travis-ci.org/dmail/ensure.svg)](http://travis-ci.org/dmail/template)
+[![build](https://travis-ci.org/dmail/ensure.svg)](http://travis-ci.org/dmail/ensure)
 [![codecov](https://codecov.io/gh/dmail/ensure/branch/master/graph/badge.svg)](https://codecov.io/gh/dmail/ensure)
 
 Basic test runner coming with some assertions.
