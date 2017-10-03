@@ -11,10 +11,7 @@
 	},
 	"main": "dist/index.js",
 	"module": "index.js",
-	"files": [
-		"dist",
-		"src"
-	],
+	"files": ["dist", "src"],
 	"engines": {
 		"node": ">=8.6.0"
 	},

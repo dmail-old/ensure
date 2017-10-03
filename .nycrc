@@ -1,6 +1,5 @@
 {
-  "sourceMap": false,
-  "instrument": false,
+  "all": true,
   "include": [
     "dist/index.js",
     "dist/**/*"
