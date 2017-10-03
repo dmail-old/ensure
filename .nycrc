@@ -1,8 +1,7 @@
 {
-  "all": true,
   "include": [
     "dist/index.js",
-    "dist/**/*"
+    "dist/**"
   ],
   "exclude": [
     "dist/**/*.test.*"
