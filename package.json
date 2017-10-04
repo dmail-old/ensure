@@ -11,7 +11,10 @@
 	},
 	"main": "dist/index.js",
 	"module": "index.js",
-	"files": ["dist", "src"],
+	"files": [
+		"dist",
+		"src"
+	],
 	"engines": {
 		"node": ">=8.6.0"
 	},
@@ -20,7 +23,7 @@
 		"@dmail/shared-config": "1.1.1",
 		"@dmail/command": "0.1.1",
 		"@dmail/prettiest": "0.1.4",
-		"@dmail/test": "0.3.4",
+		"@dmail/test": "1.1.0",
 		"babel-cli": "7.0.0-beta.0",
 		"babel-core": "7.0.0-beta.0",
 		"babel-eslint": "8.0.0",
@@ -47,8 +50,7 @@
 		"test-cover-clean": "rimraf .nyc_output && rimraf coverage && rimraf coverage.lcov",
 		"test-cover-html": "nyc report --reporter=lcov",
 		"test-cover-lcov": "nyc report --reporter=text-lcov > coverage.lcov",
-		"test-cover-upload":
-			"npm run test-cover-lcov && codecov --token=3c908882-cdce-4e91-a1cf-4db9a6fa8df1",
+		"test-cover-upload": "npm run test-cover-lcov && codecov --token=3c908882-cdce-4e91-a1cf-4db9a6fa8df1",
 		"repo-reset": "npm run code-clean && npm run test-cover-clean && rimraf node_modules",
 		"repo-reinstall": "npm run repo-reset && npm install",
 		"build": "npm run code-compile",
