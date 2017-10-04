@@ -1,5 +1,13 @@
 import assert from "assert"
 
+export const isNotTrue = value => value !== true
+
+export const isNotFalse = value => value !== false
+
+export const isNotAFunction = value => typeof value !== "function"
+
+export const isNotAnObject = value => typeof value !== "object"
+
 export const isNotDeepEqual = (actual, expected) => {
 	try {
 		assert.deepEqual(actual, expected)
