@@ -34,7 +34,7 @@ const createCall = () => {
 	const getDuration = () => msInvoked - msCreated
 	const getTemporalOrder = () => temporalOrder
 	const getThis = () => thisValue
-	const getArgs = () => argsValue
+	const getArguments = () => argsValue
 	const getValue = () => value
 	const wasCalled = () => called
 	const wasCalledBefore = otherCall => temporalOrder > otherCall.getTemporalOrder()
@@ -45,7 +45,7 @@ const createCall = () => {
 		getDuration,
 		getTemporalOrder,
 		getThis,
-		getArgs,
+		getArguments,
 		getValue,
 		wasCalled,
 		wasCalledBefore

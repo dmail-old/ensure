@@ -1,5 +1,21 @@
 import assert from "assert"
-import { assertAround } from "./assertions.js"
+import { assertAround, isNotDeepEqual } from "./assertions.js"
+
+export const wasCalled = spy => spy.getLastCall().wasCalled()
+export const wasNotCalledOnce = spy => spy.getCallCount() !== 1
+export const wasNotCalledTwice = spy => spy.getCallCount() !== 2
+export const wasCalledWithoutArguments = spy => {
+	const lastCall = spy.getLastCall()
+	return lastCall.wasCalled() && lastCall.getArguments().length === 0
+}
+export const wasCalledWithArgumentsDifferentFrom = (spy, ...expectedArgs) => {
+	const lastCall = spy.getLastCall()
+	if (!lastCall.wasCalled()) {
+		return false
+	}
+	const actualArgs = lastCall.getArguments()
+	return isNotDeepEqual(actualArgs, expectedArgs)
+}
 
 const getLastCallWhenSpy = value => {
 	if (typeof value === "function") {

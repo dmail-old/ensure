@@ -1,5 +1,14 @@
 import assert from "assert"
 
+export const isNotDeepEqual = (actual, expected) => {
+	try {
+		assert.deepEqual(actual, expected)
+		return true
+	} catch (e) {
+		return false
+	}
+}
+
 export const throwFailure = (...args) => assert.fail(...args)
 
 export const assertEqual = (...args) => assert.equal(...args)
